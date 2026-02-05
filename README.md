@@ -26,12 +26,14 @@ Git
 
 ## Швидкий старт проєкту
 1. Клонуємо репозиторій
+
    ```git clone https://github.com/vlad-purhin/Auction_web_app.git```
    
    ```cd Auction_web_app```
 
 3. Запуск сервіса через docker
-   docker-compose up --build
+4. 
+   ```docker-compose up --build```
 
 Сервіс буде доступний за адресою: http://127.0.0.1:8000
 
