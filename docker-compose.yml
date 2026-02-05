@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16  # Змінено з 18 на актуальну стабільну версію
+    container_name: auction_db
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: auction_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Зберігає дані між перезапусками
+
+  web:
+    build: .
+    container_name: auction_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    env_file: # Використовуємо .env замість прописування рядка вручну
+      - .env
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
