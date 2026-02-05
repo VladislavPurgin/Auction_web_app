@@ -37,7 +37,7 @@ Git
 3. Тестування
 Я використовував Postman, але також це можна робити через інтерактивну документацію Swagger http://127.0.0.1:8000/docs.
 Спочатку створюємо лот чере з POST /lots
-Наприклад:
+``bash
    {
   "title": "Iphone 17",
   "description": "New model Iphone",
