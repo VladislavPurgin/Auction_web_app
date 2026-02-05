@@ -43,12 +43,13 @@ Git
 Створення лота
 Відправте POST запит на /lots:
 
-JSON
+```
 {
   "title": "Iphone 17",
   "description": "New model Iphone",
   "start_price": 1500.0
 }
+```
 Перегляд списку лотів
 Відправте GET запит на /lots, щоб отримати список активних лотів.
 
