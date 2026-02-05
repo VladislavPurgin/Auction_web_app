@@ -26,8 +26,8 @@ Git
 
 ## Швидкий старт проєкту
 1. Клонуємо репозиторій
-   gil clone https://github.com/vlad-purhin/Auction_web_app.git
-   cd Auction_web_app
+   '''gil clone https://github.com/vlad-purhin/Auction_web_app.git
+   cd Auction_web_app'''
 
 2. Запуск сервіса через docker
    docker-compose up --build
